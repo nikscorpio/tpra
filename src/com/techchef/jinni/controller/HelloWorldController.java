@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloWorldController {
 
 	
-	@RequestMapping(value = {  "/home" }, method = RequestMethod.GET)
+	@RequestMapping(value ="/home", method = RequestMethod.POST)
 	public String homePage(ModelMap model) {
 		model.addAttribute("greeting", "Hi, Welcome to mysite");
 		return "welcome";
